@@ -48,13 +48,13 @@ sfc /scannow
 
 **3.)** Update or rollback the drivers in **Device Manager**
 
-**4.)** Chck more malware or run the command in **Command Prompt** `chkdsk /r` `chkdsk /f`
+**4.)** Check for more malware or run the command in **Command Prompt** `chkdsk /r` `chkdsk /f`
 
-**5.)** Clean the rollers and printhead with a clean cloth.
+**5.)** Also, try to run the command `sfc /scannow` to repair corrupted Windows system files.
 
-**6.)** Avoid touching paper immediately after printing. 
+<h2>📉Slow Performance or 100% Disk Usage📉</h2>  
 
-<h2>🌫️Printer Producing Faded or Poor Print Quality🌫️</h2>
+
 
 Possible Causes or Root Issues: Low toner/ink, clogged nozzles, or incorrect print settings.
 
