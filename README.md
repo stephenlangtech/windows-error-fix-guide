@@ -30,7 +30,7 @@ bootrec /rebuildbcd
 ```bash
 sfc /scannow
 ```
-**4.)** If issues still persists, boot into safe mode and unistall recent updates, software, or bad drivers and perform a system restore and restore to the lastest restore point. 
+**4.)** If issues still persists, boot into **Safe Mode** and unistall recent updates, software, or bad drivers and perform a **System Restore** and restore to the lastest **Restore Point**. 
 
 **5.)** As a last resort, backup all of your files and perform a clean install.
 
@@ -48,26 +48,38 @@ sfc /scannow
 
 **3.)** Update or rollback the drivers in **Device Manager**
 
-**4.)** Check for more malware or run the command in **Command Prompt** `chkdsk /r` `chkdsk /f`
+**4.)** Check for more malware or run the command in **Command Prompt** 
+```bash
+chkdsk /r chkdsk /f
+```
 
-**5.)** Also, try to run the command `sfc /scannow` to repair corrupted Windows system files.
+
+**5.)** Also, try to run the command to repair corrupted Windows system files.
+```bash
+sfc /scannow
+```
 
 <h2>📉Slow Performance or 100% Disk Usage📉</h2>  
 
+***Symptoms:*** System running extremely slow, taking a long time to boot, fans running loudly, disk usage stays at 100% in **Task Manager** 
 
-
-Possible Causes or Root Issues: Low toner/ink, clogged nozzles, or incorrect print settings.
+***Possible Causes or Root Issues:*** Too many apps and programs up at once, Background services, **Windows Search Indexing**, or disk health issues.
 
 
 <ins>Fixes:</ins> 
 
-**1.)** Replace or refill low-ink or toner cartridges.
+**1.)** Restart the system and check **Task Manager**. `Ctrl+Shift+Esc`->select the **Processes** tab-> single out which apps are using high disk, CPU, or memory and end the tasks. 
 
-**2.)** Perform a nozzle check and clean the print head.
+**2.)** Disable Unecessary **Startup Apps**. Press `Ctrl+Shift+Esc` -> select the **Startup** tab->right-click and disable apps that are eating up too many resources and that don't need to be automatically running. 
 
-**3.)** Ensure proper quality and resolution in print mode settings.
+**3.)** Check the **Disk Health** by running the commands in **Command Prompt**
+```bash
+chkdsk /f
+chkdsk /r
+```
+This scans for and repairs bad sectors on the drive that can cause performance slowdowns.
 
-**4.)** Verify you're using the correct paper type and print drivers are correct.
+**4.)** If you're running on **HDD**, upgrade to **SSD** to boost and improve performance. 
 
  <h2>🔡Printer Printing Garbled or Scrambled Text🔡</h2>
 
