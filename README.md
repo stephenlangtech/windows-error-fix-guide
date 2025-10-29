@@ -7,16 +7,16 @@ This repository serves as a quick reference point to resolve common Windows erro
 
 <h2>🥾Windows Failing to Boot or Stuck🥾</h2>  
 
-**Symptoms:** Windows restarts repeatedly, displays a message stating "Automatic Repair couldn't Repair your PC", or it gets stuck at the Windows Logo Screen    
+***Symptoms:*** Windows restarts repeatedly, displays a message stating **"Automatic Repair couldn't Repair your PC"**, or it gets stuck at the Windows Logo Screen.    
 
-**Possible Causes or Root Issues:** Corrupted system files, bad updates, bad drivers, or boot configuration errors.
+***Possible Causes or Root Issues:*** Corrupted system files, bad updates, bad drivers, or boot configuration errors.
 
 
 <ins>Fixes:</ins> 
 
-**1.)** Hold Shift+Click Restart->Troubleshoot->Advanced Startup Options->Startup Repair.
+**1.)** Hold `Shift+Click` **Restart->Troubleshoot->Advanced Startup Options->Startup Repair**.
 
-**2.)** If the previous step fails, open up the Command Prompt and run the following commands:
+**2.)** If the previous step fails, open up the **Command Prompt** and run the following commands:
 
 ```bash
 bootrec /fixmbr  
@@ -25,7 +25,7 @@ bootrec /scanos
 bootrec /rebuildbcd
 ```
 
-**3.)** Next, run a System File Check: 
+**3.)** Next, run a **System File Check**: 
 
 ```bash
 sfc /scannow
@@ -34,20 +34,21 @@ sfc /scannow
 
 **5.)** As a last resort, backup all of your files and perform a clean install.
 
-<h2>Blue Screen of Death (BSOD) </h2>
+<h2>🟦Blue Screen of Death (BSOD)🟦</h2>  
 
-Possible Causes or Root Issues: Dirty printer heads, incorrect paper type, or ink issues.
+***Symptoms:*** Blue Screen errors with codes such as `MEMORY_MANAGEMENT`, `SYSTEM_SERVICE_EXCEPTION`, or `CRITICAL_PROCESS_DIED`.
 
+***Possible Causes or Root Issues:*** Faulty drivers, hardware failure, or corrupted memory.  
 
 <ins>Fixes:</ins> 
 
-**1.)** Run the printer's cleaning cycle or print head cleaning function.
+**1.)** Boot into **Safe Mode**.  
 
-**2.)** Verify that you're using the correct paper type that matches the printer settings.
+**2.)** Run the **Windows Diagnostic Tool**. `Windows+R` and type `mdsched.exe`->**Restart now** and check for problems, and run the test.
 
-**3.)** Check ink levels and replace low or leaking cartridges.
+**3.)** Update or rollback the drivers in **Device Manager**
 
-**4.)** Properly align the ink cartridges.
+**4.)** Chck more malware or run the command in **Command Prompt** `chkdsk /r` `chkdsk /f`
 
 **5.)** Clean the rollers and printhead with a clean cloth.
 
