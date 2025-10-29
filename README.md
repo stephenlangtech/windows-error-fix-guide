@@ -6,25 +6,34 @@
 This repository serves as a quick reference point to resolve common Windows errors and performance issues. Each section will outline key symptoms, possible causes, and troubleshooting steps used by IT professionals to resolve them.
 
 <h2>🥾Windows Failing to Boot or Stuck🥾</h2>
+***Symptoms:*** Windows restarts repeately, displays a message stating "Automatic Repair couldn't Repair your PC", or it gets stuck at the Windows Logo Screen
 
-Possible Causes or Root Issues: Corrupted system files, bad updates, bad drivers, or boot configuration errors.
+***Possible Causes or Root Issues:*** Corrupted system files, bad updates, bad drivers, or boot configuration errors.
 
 
 <ins>Fixes:</ins> 
 
-**1.)** Verify the printer is actually plugged in via the Power Cable.
+**1.)** Hold Shift+Click Restart->Troubleshoot->Advanced Startup Options->Startup Repair.
 
-**2.)** Ensure the printer is connected to the network and added as a device on the PC.
+**2.)** If the previous step fails, open up the Command Prompt and run the following commands:
 
-**3.)** Inspect the power cable for damage or loose connections.
+```bash
+bootrec /fixmbr  
+bootrec /fixboot  
+bootrec /scanos  
+bootrec /rebuildbcd
+```
 
-**4.)** Try a different AC outlet or power cable.
+**3.)** Next, run a System File Check: 
 
-**5.)** Ensure the switch is in the "On" position.
+```bash
+sfc /scannow
+```
+**4.)** If issues still persists, boot into safe mode and unistall recent updates, software, or bad drivers and perform a system restore and restore to the lastest restore point. 
 
-**6.)** If it's still unresponsive, perform a hard reset and wait 30 seconds before booting the printer back up. 
+**5.)** As a last resort, backup all of your files and perform a clean install.
 
-<h2>🧼Printer Outputting Smeared, Blurry, or Smudged Text🧼</h2>
+<h2>Blue Screen of Death (BSOD) </h2>
 
 Possible Causes or Root Issues: Dirty printer heads, incorrect paper type, or ink issues.
 
