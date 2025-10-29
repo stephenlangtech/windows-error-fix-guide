@@ -81,35 +81,58 @@ This scans for and repairs bad sectors on the drive that can cause performance s
 
 **4.)** If you're running on **HDD**, upgrade to **SSD** to boost and improve performance. 
 
- <h2>🔡Printer Printing Garbled or Scrambled Text🔡</h2>
+ <h2>🖥️Windows Update Failures🖥️</h2>
 
-Possible Causes or Root Issues: Driver issues, incorrect printer model selection, or corrupted data
+ ***Symptoms:*** Update fails to install, error codes `0x80070002` or `0x800f081f` 
 
+Possible Causes or Root Issues: Corrupted update cache or broken Windows components.
 
-<ins>Fixes:</ins> 
-
-**1.)** Ensure you have the right printer drivers installed.
-
-**2.)** Reinstall or update the printer drivers from the manufacturer's website.
-
-**3.)** Verify you're sending print jobs to the correct printer in the print dialog.
-
-**4.)** Restart the printer and the PC.
-
-**5.)** Try printing from a different app or file to isolate the issue. 
-
- <h2>📄Printer paper Jams📄</h2>
-
-Possible Causes or Root Issues: Obstructed rollers, misaligned paper, paper scraps, or poor paper quality
 
 <ins>Fixes:</ins> 
 
-**1.)** Power the printer off and gently remove the jammed paper from the feeder.
+**1.)** Run **Windows Update Troubleshooter** by going to **Start->Settings->Update & Security->Troubleshoot->Additional Troubleshooters->Windows Update-> Run Troubleshooter**
 
-**2.)** Open access panels to ensure there aren't any paper scraps inside.
+**2.)** Stop update services by running these two commands:
+```bash
+net stop wuauserv
+net stop bits
+```
+`net stop wuauserv` - This command stops the **Windows Update Service**, which is responsible for verifying, downloading, and installing Windows updates.  
 
-**3.)** Gently reseat and reload the paper properly into the tray.
+`net stop bits` - This stops the **Background Intelligent Transfer Service (BITS)**. **BITS** manages background downloads, including Windows updates.
 
-**4.)** Check the rollers for dust buildup or debris and clean with a clean cloth.
+**3.)** Delete the update cache folder: 
+```bash
+C:\Windows\SoftwareDistribution
+```
 
-**5.)** Avoid overload or overfilling the paper tray and always use the recommended paper sizing. 
+**4.)** Now restart the services by running the following commands in **Command Prompt**
+```bash
+net start wuauserv
+net start bits
+```
+
+**5.)** Lastly, reboot and retry updating Windows. 
+
+ <h2>📶Wi-Fi or Network Connectivity Issues📶</h2>  
+
+***Symptoms:*** **Wi-fi** appears to be connected, but no internet, or **DNS** errors occur.
+
+***Possible Causes or Root Issues:*** **Network adapter** issues or **DNS** misconfigurations.
+<ins>Fixes:</ins> 
+
+**1.)** Run the **Network Troubleshooter** by heading to **Settings->Network & internet->Status->Network Troubleshooter**.
+
+**2.)** Reset the networ settings in **Command Prompt**:
+```bash
+ipconfig /release
+ipconfig /renew
+ipconfig /flushdns
+```
+
+**3.)** Update or reinstall network drivers in **Device Manager**
+
+**4.)** Switch DNS to Google's public DNS
+`8.8.8.8` and `8.8.8.4` 
+
+**5.)** **Reset** router or **Power Off** router and wait 30 secondsbefore powering it back on. 
