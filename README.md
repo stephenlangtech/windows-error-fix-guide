@@ -5,10 +5,11 @@
 
 This repository serves as a quick reference point to resolve common Windows errors and performance issues. Each section will outline key symptoms, possible causes, and troubleshooting steps used by IT professionals to resolve them.
 
-<h2>🥾Windows Failing to Boot or Stuck🥾</h2>
-***Symptoms:*** Windows restarts repeately, displays a message stating "Automatic Repair couldn't Repair your PC", or it gets stuck at the Windows Logo Screen
+<h2>🥾Windows Failing to Boot or Stuck🥾</h2>  
 
-***Possible Causes or Root Issues:*** Corrupted system files, bad updates, bad drivers, or boot configuration errors.
+**Symptoms:** Windows restarts repeatedly, displays a message stating "Automatic Repair couldn't Repair your PC", or it gets stuck at the Windows Logo Screen    
+
+**Possible Causes or Root Issues:** Corrupted system files, bad updates, bad drivers, or boot configuration errors.
 
 
 <ins>Fixes:</ins> 
