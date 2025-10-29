@@ -3,7 +3,7 @@
 <img src="https://www.securedatarecovery.com/Media/blog/2024/blue-screen-of-death-laptop.webp" alt="How To Fix a Blue Screen of Death (BSOD) on Windows PC"/>
 </p>
 
-This repository serves as a qucik reference point to resolve common windows errors and perfromance issues. Each section will outline key symptoms, possible causes, and trobleshooting steps used by IT professionials to resolve them.
+This repository serves as a quick reference point to resolve common Windows errors and performance issues. Each section will outline key symptoms, possible causes, and troubleshooting steps used by IT professionals to resolve them.
 
 <h2>🥾Windows Failing to Boot or Stuck🥾</h2>
 
