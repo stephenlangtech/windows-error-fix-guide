@@ -70,7 +70,7 @@ sfc /scannow
 
 **1.)** Restart the system and check **Task Manager**. `Ctrl+Shift+Esc`->select the **Processes** tab-> single out which apps are using high disk, CPU, or memory and end the tasks. 
 
-**2.)** Disable Unecessary **Startup Apps**. Press `Ctrl+Shift+Esc` -> select the **Startup** tab->right-click and disable apps that are eating up too many resources and that don't need to be automatically running. 
+**2.)** Disable Unecessary **Startup Apps**. Press `Ctrl+Shift+Esc` -> select the **Startup** tab->right-click and disable apps that are eating up too many resources and don't need to be automatically running. 
 
 **3.)** Check the **Disk Health** by running the commands in **Command Prompt**
 ```bash
