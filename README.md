@@ -85,7 +85,7 @@ This scans for and repairs bad sectors on the drive that can cause performance s
 
  ***Symptoms:*** Update fails to install, error codes `0x80070002` or `0x800f081f` 
 
-Possible Causes or Root Issues: Corrupted update cache or broken Windows components.
+***Possible Causes or Root Issues:*** Corrupted update cache or broken Windows components.
 
 
 <ins>Fixes:</ins> 
