@@ -118,7 +118,8 @@ net start bits
 
 ***Symptoms:*** **Wi-fi** appears to be connected, but no internet, or **DNS** errors occur.
 
-***Possible Causes or Root Issues:*** **Network adapter** issues or **DNS** misconfigurations.
+***Possible Causes or Root Issues:*** **Network adapter** issues or **DNS** misconfigurations.  
+
 <ins>Fixes:</ins> 
 
 **1.)** Run the **Network Troubleshooter** by heading to **Settings->Network & internet->Status->Network Troubleshooter**.
