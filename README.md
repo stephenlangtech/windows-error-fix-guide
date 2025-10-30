@@ -63,7 +63,7 @@ sfc /scannow
 
 ***Symptoms:*** System running extremely slow, taking a long time to boot, fans running loudly, disk usage stays at 100% in **Task Manager** 
 
-***Possible Causes or Root Issues:*** Too many apps and programs up at once, Background services, **Windows Search Indexing**, or disk health issues.
+***Possible Causes or Root Issues:*** Too many apps and programs up at once, background services, **Windows Search Indexing**, or disk health issues.
 
 
 <ins>Fixes:</ins> 
